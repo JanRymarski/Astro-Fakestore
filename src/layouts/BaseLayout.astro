@@ -1,4 +1,9 @@
 ---
+import Header from '../components/Header.astro';
+import ProductsList from '../components/ProductsList.astro';
+import ProductsCard from '../components/ProductCard.astro';
+
+
 import '../styles/global.css';
 
 ---
@@ -18,7 +23,9 @@ import '../styles/global.css';
         />
 	</head>
 	<body>
-		<h1>Astro</h1>
+        <Header />
+        <ProductsList />
+        <ProductsCard />
         <slot/>
 	</body>
 </html>
